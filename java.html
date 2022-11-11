@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+ <meta charset="utf-8"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ <title>Random</title> 
+ <script 
+  src="https://code.jquery.com/jquery-3.1.1.js" 
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" 
+  crossorigin="anonymous"></script> 
+   <script src="http://malsup.github.io/jquery.cycle.all.js"></script> 
+  <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+ <div id="container"> 
+ <h1>Random Pictures</h1> 
+  <div class="slider"> 
+   <img src="slide1.jpg" width="640" height="426"> 
+   <img src="slide2.jpg" width="640" height="426"> 
+   <img src="slide3.jpg" width="640" height="426"> 
+   <img src="slide4.jpg" width="640" height="426"> 
+   <img src="slide5.jpg" width="640" height="426"> 
+  </div> 
+ 
+  <ul id="nav"> 
+   <li id="prev"><a href="#">Previous</a></li> 
+   <li id="next"><a href="#">Next</a></li> 
+  </ul> 
+ </div> 
+ 
+ 
+ <script type="text/javascript"> 
+  $(document).ready(function(){ 
+  $('.slider').cycle({ 
+   fx: 'turnDown', 
+   pause: 1, 
+   prev: '#prev', 
+   next: '#next' 
+  }); 
+ });  
+ </script> 
+</body> 
+</html>
